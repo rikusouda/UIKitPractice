@@ -1,0 +1,11 @@
+.DS_Store
+/Pods/
+/UIKitPractice.xcworkspace/
+/UIKitPractice.xcodeproj/xcuserdata
+/UIKitPractice.xcodeproj/project.xcworkspace
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore bundler gems.
+vendor/bundle
