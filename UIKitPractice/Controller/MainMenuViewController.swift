@@ -22,28 +22,3 @@ class MainMenuViewController: UITableViewController {
 
 
 }
-
-extension MainMenuViewController {
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        self.performSegue(withIdentifier: "scrollViewSegue", sender: self)
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
-    }
-}
-
-
-extension MainMenuViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainMenuCell") as! MainMenuCell
-        cell.configure(title: "UIScrollView")
-        return cell
-    }
-}

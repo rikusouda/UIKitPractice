@@ -1,6 +1,6 @@
 //
 //  ScrollViewController.swift
-//  UIKitProctice
+//  UIKitPractice
 //
 //  Created by Yuki Yoshioka on 2017/08/20.
 //  Copyright © 2017年 rikusouda. All rights reserved.

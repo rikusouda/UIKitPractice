@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */; };
 		B60B0DB71F5BCA9400056E9D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */; };
-		B60B0DBA1F5BCAB700056E9D /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB91F5BCAB700056E9D /* MainMenuCell.swift */; };
 		B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */; };
+		B60B0DBF1F5BDB0400056E9D /* DynamicTableViewIB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */; };
+		B60B0DC11F5BDB6C00056E9D /* TableViewIBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DC01F5BDB6C00056E9D /* TableViewIBCell.swift */; };
+		B60B0DC31F5BDC8400056E9D /* DynamicTableViewIBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DC21F5BDC8400056E9D /* DynamicTableViewIBController.swift */; };
 		B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2AD7B1F49805800D30119 /* AppDelegate.swift */; };
 		B6E2AD811F49805800D30119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD7F1F49805800D30119 /* Main.storyboard */; };
 		B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD821F49805800D30119 /* Assets.xcassets */; };
@@ -20,8 +22,10 @@
 /* Begin PBXFileReference section */
 		B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controller/MainMenuViewController.swift; sourceTree = "<group>"; };
 		B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Controller/ScrollViewController.swift; sourceTree = "<group>"; };
-		B60B0DB91F5BCAB700056E9D /* MainMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuCell.swift; path = View/MainMenuCell.swift; sourceTree = "<group>"; };
 		B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScrollViewScene.storyboard; path = Storyboard/ScrollViewScene.storyboard; sourceTree = "<group>"; };
+		B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DynamicTableViewIB.storyboard; path = Storyboard/DynamicTableViewIB.storyboard; sourceTree = "<group>"; };
+		B60B0DC01F5BDB6C00056E9D /* TableViewIBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewIBCell.swift; path = View/TableViewIBCell.swift; sourceTree = "<group>"; };
+		B60B0DC21F5BDC8400056E9D /* DynamicTableViewIBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTableViewIBController.swift; path = Controller/DynamicTableViewIBController.swift; sourceTree = "<group>"; };
 		B6E2AD781F49805800D30119 /* UIKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2AD7B1F49805800D30119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6E2AD801F49805800D30119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +50,7 @@
 			children = (
 				B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */,
 				B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */,
+				B60B0DC21F5BDC8400056E9D /* DynamicTableViewIBController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -53,7 +58,7 @@
 		B60B0DB81F5BCA9B00056E9D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B60B0DB91F5BCAB700056E9D /* MainMenuCell.swift */,
+				B60B0DC01F5BDB6C00056E9D /* TableViewIBCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -64,6 +69,7 @@
 				B6E2AD841F49805800D30119 /* LaunchScreen.storyboard */,
 				B6E2AD7F1F49805800D30119 /* Main.storyboard */,
 				B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */,
+				B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 				B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */,
 				B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */,
 				B6E2AD811F49805800D30119 /* Main.storyboard in Resources */,
+				B60B0DBF1F5BDB0400056E9D /* DynamicTableViewIB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60B0DC31F5BDC8400056E9D /* DynamicTableViewIBController.swift in Sources */,
+				B60B0DC11F5BDB6C00056E9D /* TableViewIBCell.swift in Sources */,
 				B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */,
 				B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */,
 				B60B0DB71F5BCA9400056E9D /* ScrollViewController.swift in Sources */,
-				B60B0DBA1F5BCAB700056E9D /* MainMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

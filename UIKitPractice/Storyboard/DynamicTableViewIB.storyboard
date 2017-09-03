@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HwW-kh-1I0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Table ViewIB Controller-->
+        <scene sceneID="Kwh-TC-xdY">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="HwW-kh-1I0" customClass="DynamicTableViewIBController" customModule="UIKitPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tEn-6b-YxX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xho-ET-orX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gAQ-9D-0a2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WCB-3A-3Po">
+                                <rect key="frame" x="16" y="64" width="343" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewIBCell" rowHeight="50" id="mfY-rV-O1d" customClass="TableViewIBCell" customModule="UIKitPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mfY-rV-O1d" id="DMg-Y9-6ef">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgo-fc-4WF">
+                                                    <rect key="frame" x="8" y="8" width="327" height="33"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Bgo-fc-4WF" firstAttribute="leading" secondItem="DMg-Y9-6ef" secondAttribute="leadingMargin" id="9jy-gt-fmn"/>
+                                                <constraint firstItem="Bgo-fc-4WF" firstAttribute="top" secondItem="DMg-Y9-6ef" secondAttribute="topMargin" id="cVc-U5-Whl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bgo-fc-4WF" secondAttribute="trailing" id="gG7-7u-3j7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bgo-fc-4WF" secondAttribute="bottom" id="kH3-Jh-Bir"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemLabel" destination="Bgo-fc-4WF" id="IRx-VJ-53q"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HwW-kh-1I0" id="FQl-w6-CPf"/>
+                                    <outlet property="delegate" destination="HwW-kh-1I0" id="D8c-hd-CeV"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnX-iG-AfO">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Add" id="0RY-Xv-N3V">
+                                        <connections>
+                                            <action selector="didTapAddButton:" destination="HwW-kh-1I0" id="K02-kR-I4u"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ior-yP-1y0"/>
+                                    <barButtonItem title="Delete" id="Zgy-Ll-3FR">
+                                        <connections>
+                                            <action selector="didTapDeleteButton:" destination="HwW-kh-1I0" id="4Br-MV-6Vg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xho-ET-orX" firstAttribute="top" secondItem="jnX-iG-AfO" secondAttribute="bottom" id="7vk-jC-rr9"/>
+                            <constraint firstAttribute="trailing" secondItem="jnX-iG-AfO" secondAttribute="trailing" id="FZO-Ek-1uC"/>
+                            <constraint firstItem="WCB-3A-3Po" firstAttribute="leading" secondItem="gAQ-9D-0a2" secondAttribute="leadingMargin" id="Rul-fQ-YdY"/>
+                            <constraint firstItem="jnX-iG-AfO" firstAttribute="leading" secondItem="gAQ-9D-0a2" secondAttribute="leading" id="Xab-gq-U0l"/>
+                            <constraint firstItem="WCB-3A-3Po" firstAttribute="top" secondItem="tEn-6b-YxX" secondAttribute="bottom" id="iFd-v8-Ysg"/>
+                            <constraint firstItem="jnX-iG-AfO" firstAttribute="top" secondItem="WCB-3A-3Po" secondAttribute="bottom" id="n2K-iv-g2s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WCB-3A-3Po" secondAttribute="trailing" id="z8g-1i-qwQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="WCB-3A-3Po" id="PAa-3A-PxS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OG5-SW-XhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1514.4000000000001" y="-290.10494752623691"/>
+        </scene>
+    </scenes>
+</document>
