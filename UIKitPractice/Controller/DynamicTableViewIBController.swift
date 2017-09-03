@@ -67,8 +67,13 @@ extension DynamicTableViewIBController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let item = item(for: indexPath) {
             let alert = UIAlertController(title: item, message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK",
+                                          style: .default,
+                                          handler: nil)
+            )
             self.present(alert, animated: true, completion: nil)
         }
+        self.tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
