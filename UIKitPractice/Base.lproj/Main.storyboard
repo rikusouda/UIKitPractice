@@ -52,31 +52,20 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="CuB-Pl-FbS"/>
                     <connections>
-                        <segue destination="kH1-Uo-AQu" kind="show" identifier="scrollViewSegue" id="IgC-Wi-JKd"/>
+                        <segue destination="IDJ-87-ZaM" kind="show" identifier="scrollViewSegue" id="N4c-Eu-8Tk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3m-R2-6ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="325"/>
         </scene>
-        <!--Scroll View Controller-->
-        <scene sceneID="xHi-Xt-2Yu">
+        <!--ScrollViewScene-->
+        <scene sceneID="44l-8F-Mch">
             <objects>
-                <viewController id="kH1-Uo-AQu" customClass="ScrollViewController" customModule="UIKitPractice" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jNv-R1-Qyd"/>
-                        <viewControllerLayoutGuide type="bottom" id="zxQ-Xx-uVx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5iP-65-CUg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SoA-Zh-dpD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i5N-Iv-Tzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ScrollViewScene" id="IDJ-87-ZaM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AZS-lX-m3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="225"/>
+            <point key="canvasLocation" x="874" y="188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nOx-jY-OZf">

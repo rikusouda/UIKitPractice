@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B65FDC351F4988CA00CB5821 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65FDC341F4988CA00CB5821 /* ScrollViewController.swift */; };
+		B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */; };
+		B60B0DB71F5BCA9400056E9D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */; };
+		B60B0DBA1F5BCAB700056E9D /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB91F5BCAB700056E9D /* MainMenuCell.swift */; };
+		B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */; };
 		B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2AD7B1F49805800D30119 /* AppDelegate.swift */; };
-		B6E2AD7E1F49805800D30119 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2AD7D1F49805800D30119 /* MainMenuViewController.swift */; };
 		B6E2AD811F49805800D30119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD7F1F49805800D30119 /* Main.storyboard */; };
 		B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD821F49805800D30119 /* Assets.xcassets */; };
 		B6E2AD861F49805800D30119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD841F49805800D30119 /* LaunchScreen.storyboard */; };
-		B6E2AD8E1F4983B300D30119 /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2AD8D1F4983B300D30119 /* MainMenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B65FDC341F4988CA00CB5821 /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controller/MainMenuViewController.swift; sourceTree = "<group>"; };
+		B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Controller/ScrollViewController.swift; sourceTree = "<group>"; };
+		B60B0DB91F5BCAB700056E9D /* MainMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuCell.swift; path = View/MainMenuCell.swift; sourceTree = "<group>"; };
+		B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScrollViewScene.storyboard; path = Storyboard/ScrollViewScene.storyboard; sourceTree = "<group>"; };
 		B6E2AD781F49805800D30119 /* UIKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2AD7B1F49805800D30119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B6E2AD7D1F49805800D30119 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		B6E2AD801F49805800D30119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6E2AD821F49805800D30119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E2AD851F49805800D30119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E2AD871F49805800D30119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6E2AD8D1F4983B300D30119 /* MainMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60B0DB31F5BCA6A00056E9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */,
+				B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B60B0DB81F5BCA9B00056E9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B60B0DB91F5BCAB700056E9D /* MainMenuCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B60B0DBD1F5BCB8C00056E9D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B6E2AD841F49805800D30119 /* LaunchScreen.storyboard */,
+				B6E2AD7F1F49805800D30119 /* Main.storyboard */,
+				B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		B6E2AD6F1F49805800D30119 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +87,11 @@
 		B6E2AD7A1F49805800D30119 /* UIKitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				B60B0DBD1F5BCB8C00056E9D /* Storyboard */,
+				B60B0DB81F5BCA9B00056E9D /* View */,
+				B60B0DB31F5BCA6A00056E9D /* Controller */,
 				B6E2AD7B1F49805800D30119 /* AppDelegate.swift */,
-				B65FDC341F4988CA00CB5821 /* ScrollViewController.swift */,
-				B6E2AD7D1F49805800D30119 /* MainMenuViewController.swift */,
-				B6E2AD8D1F4983B300D30119 /* MainMenuCell.swift */,
-				B6E2AD7F1F49805800D30119 /* Main.storyboard */,
 				B6E2AD821F49805800D30119 /* Assets.xcassets */,
-				B6E2AD841F49805800D30119 /* LaunchScreen.storyboard */,
 				B6E2AD871F49805800D30119 /* Info.plist */,
 			);
 			path = UIKitPractice;
@@ -130,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E2AD861F49805800D30119 /* LaunchScreen.storyboard in Resources */,
+				B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */,
 				B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */,
 				B6E2AD811F49805800D30119 /* Main.storyboard in Resources */,
 			);
@@ -142,10 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E2AD7E1F49805800D30119 /* MainMenuViewController.swift in Sources */,
-				B6E2AD8E1F4983B300D30119 /* MainMenuCell.swift in Sources */,
+				B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */,
 				B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */,
-				B65FDC351F4988CA00CB5821 /* ScrollViewController.swift in Sources */,
+				B60B0DB71F5BCA9400056E9D /* ScrollViewController.swift in Sources */,
+				B60B0DBA1F5BCAB700056E9D /* MainMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
