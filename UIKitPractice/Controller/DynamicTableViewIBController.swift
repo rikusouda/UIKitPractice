@@ -49,9 +49,11 @@ extension DynamicTableViewIBController {
             items.removeLast(1)
             self.tableView.deleteRows(at: [IndexPath(row: items.count, section: 0)],
                                       with: .automatic)
-            self.tableView.scrollToRow(at: IndexPath(row: items.count-1, section: 0),
-                                       at: .bottom,
-                                       animated: true)
+            if items.count > 0 {
+                self.tableView.scrollToRow(at: IndexPath(row: items.count-1, section: 0),
+                                           at: .bottom,
+                                           animated: true)
+            }
         }
     }
     
