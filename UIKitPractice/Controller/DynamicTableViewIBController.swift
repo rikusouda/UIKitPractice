@@ -17,6 +17,10 @@ class DynamicTableViewIBController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        for _ in 0...3 {
+            appendItem()
+        }
     }
     
     override func didReceiveMemoryWarning() {
