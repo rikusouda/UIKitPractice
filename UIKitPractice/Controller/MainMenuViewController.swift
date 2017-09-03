@@ -26,7 +26,7 @@ class MainMenuViewController: UITableViewController {
 extension MainMenuViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("セルがタップされたよ！")
+        
         self.performSegue(withIdentifier: "scrollViewSegue", sender: self)
     }
     
