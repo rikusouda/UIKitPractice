@@ -17,6 +17,7 @@
 		B6E2AD811F49805800D30119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD7F1F49805800D30119 /* Main.storyboard */; };
 		B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD821F49805800D30119 /* Assets.xcassets */; };
 		B6E2AD861F49805800D30119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD841F49805800D30119 /* LaunchScreen.storyboard */; };
+		B6EAE7C11F6514180094830C /* SizeClassPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6EAE7C01F6514180094830C /* SizeClassPractice.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B6E2AD821F49805800D30119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E2AD851F49805800D30119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E2AD871F49805800D30119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6EAE7C01F6514180094830C /* SizeClassPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SizeClassPractice.storyboard; path = Storyboard/SizeClassPractice.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				B6E2AD7F1F49805800D30119 /* Main.storyboard */,
 				B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */,
 				B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */,
+				B6EAE7C01F6514180094830C /* SizeClassPractice.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */,
 				B6E2AD811F49805800D30119 /* Main.storyboard in Resources */,
 				B60B0DBF1F5BDB0400056E9D /* DynamicTableViewIB.storyboard in Resources */,
+				B6EAE7C11F6514180094830C /* SizeClassPractice.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIKitPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rikusouda.UIKitPractice;
@@ -318,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = UIKitPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rikusouda.UIKitPractice;
