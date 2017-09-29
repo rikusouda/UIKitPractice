@@ -9,6 +9,8 @@
 import UIKit
 
 class ScrollViewController: UIViewController {
+    var scrollView: UIScrollView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -17,6 +19,7 @@ class ScrollViewController: UIViewController {
         let sv = UIScrollView(frame: UIScreen.main.bounds)
         sv.backgroundColor = UIColor.white
         self.view = sv
+        self.scrollView = sv
         
         var y: CGFloat = 10
         for i in 0...30 {
@@ -45,6 +48,13 @@ class ScrollViewController: UIViewController {
     }
 
 
+    @IBAction func didTapIsBottomButton(_ sender: Any) {
+        let isBottom = self.scrollView.contentSize.height <= self.scrollView.contentOffset.y + self.scrollView.bounds.size.height
+        
+        let alert = UIAlertController(title: isBottom ? "Bottom" : "Not bottom", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: false, completion: nil)
+    }
     
 }
 
