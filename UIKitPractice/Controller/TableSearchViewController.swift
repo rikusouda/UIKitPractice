@@ -24,6 +24,7 @@ class TableSearchViewController: UITableViewController {
         searchController.searchBar.sizeToFit()
         
         if #available(iOS 11.0, *) {
+            self.definesPresentationContext = true
             self.navigationItem.searchController = searchController
         } else {
             self.tableView.tableHeaderView = searchController.searchBar
