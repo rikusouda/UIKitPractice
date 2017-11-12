@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w49-Fa-N4y">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intractive Transition Controller-->
+        <scene sceneID="Tkn-xF-GGL">
+            <objects>
+                <viewController id="w49-Fa-N4y" customClass="IntractiveTransitionController" customModule="UIKitPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YxL-Xa-RwC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="riku_photo" translatesAutoresizingMaskIntoConstraints="NO" id="hQT-pW-g8a">
+                                <rect key="frame" x="100" y="340.33333333333331" width="175" height="131.33333333333331"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hQT-pW-g8a" secondAttribute="height" multiplier="4:3" id="m3B-Hw-fbr"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7gk-Z5-tIR" appends="YES" id="pmL-8w-TBL"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hQT-pW-g8a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="giD-Ei-GQc" secondAttribute="top" constant="100" id="CGg-Qt-9Ck"/>
+                            <constraint firstItem="hQT-pW-g8a" firstAttribute="centerY" secondItem="YxL-Xa-RwC" secondAttribute="centerY" id="acl-VO-7Ki"/>
+                            <constraint firstItem="hQT-pW-g8a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YxL-Xa-RwC" secondAttribute="leading" constant="100" id="bCG-C8-xgO"/>
+                            <constraint firstItem="hQT-pW-g8a" firstAttribute="centerX" secondItem="YxL-Xa-RwC" secondAttribute="centerX" id="dhW-60-V7X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="giD-Ei-GQc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSf-Mq-Pkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7gk-Z5-tIR">
+                    <connections>
+                        <action selector="didTapImage:" destination="w49-Fa-N4y" id="2vQ-v4-VIT"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-302" y="-9"/>
+        </scene>
+        <!--Intractive Transition Preview Controller-->
+        <scene sceneID="HhX-SF-amr">
+            <objects>
+                <viewController storyboardIdentifier="IntractiveTransitionPreviewController" id="1eX-SV-Jyt" customClass="IntractiveTransitionPreviewController" customModule="UIKitPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xiF-bK-fdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="riku_photo" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-0V-79h">
+                                <rect key="frame" x="0.0" y="265.66666666666663" width="374" height="280.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tWd-0V-79h" secondAttribute="height" multiplier="4:3" id="57V-Wp-lDZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fml-U3-4jA">
+                                <rect key="frame" x="325" y="64" width="30" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="1eX-SV-Jyt" eventType="touchUpInside" id="pWa-ns-7cg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tWd-0V-79h" firstAttribute="centerX" secondItem="xiF-bK-fdO" secondAttribute="centerX" id="2hq-Nm-wUz"/>
+                            <constraint firstItem="tWd-0V-79h" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xiF-bK-fdO" secondAttribute="top" id="7gr-cW-Yx2"/>
+                            <constraint firstItem="fml-U3-4jA" firstAttribute="top" secondItem="pkN-26-Ust" secondAttribute="top" constant="20" id="D8e-Ns-c7t"/>
+                            <constraint firstItem="tWd-0V-79h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xiF-bK-fdO" secondAttribute="leading" id="Qkh-X4-bPW"/>
+                            <constraint firstItem="pkN-26-Ust" firstAttribute="trailing" secondItem="fml-U3-4jA" secondAttribute="trailing" constant="20" id="Z75-24-CIt"/>
+                            <constraint firstItem="tWd-0V-79h" firstAttribute="centerY" secondItem="xiF-bK-fdO" secondAttribute="centerY" id="ZAy-aL-R0U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pkN-26-Ust"/>
+                    </view>
+                    <connections>
+                        <outlet property="pictureView" destination="tWd-0V-79h" id="sFV-Xe-qLL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPt-cr-mdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="-10"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="riku_photo" width="3264" height="2448"/>
+    </resources>
+</document>
