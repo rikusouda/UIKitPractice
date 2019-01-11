@@ -40,7 +40,7 @@ class DynamicTableViewIBController: UIViewController {
 extension DynamicTableViewIBController {
     
     
-    func appendItem(with animation: UITableViewRowAnimation, autoScroll: Bool) {
+    func appendItem(with animation: UITableView.RowAnimation, autoScroll: Bool) {
         let item = "Cell \(items.count)"
         items.append(item)
         let indexPath = IndexPath(row: items.count-1, section: 0)
@@ -50,7 +50,7 @@ extension DynamicTableViewIBController {
         }
     }
     
-    func deleteItem(with animation: UITableViewRowAnimation, autoScroll: Bool) {
+    func deleteItem(with animation: UITableView.RowAnimation, autoScroll: Bool) {
         if items.count > 0 {
             items.removeLast(1)
             self.tableView.deleteRows(at: [IndexPath(row: items.count, section: 0)],

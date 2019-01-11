@@ -94,7 +94,7 @@ extension TableSearchViewController: UISearchResultsUpdating {
         guard searchController.isActive else { return }
         
         if let searchText = searchController.searchBar.text,
-            searchText.characters.count > 0 {
+            searchText.count > 0 {
             self.searchedItems = self.items.filter { $0.contains(searchText) }
         } else {
             self.searchedItems = self.items
