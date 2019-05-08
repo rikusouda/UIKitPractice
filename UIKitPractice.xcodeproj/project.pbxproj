@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2BFD091A1F97450E00E376E9 /* TableSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFD09191F97450E00E376E9 /* TableSearch.storyboard */; };
 		2BFD091C1F9745A100E376E9 /* TableSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFD091B1F9745A100E376E9 /* TableSearchViewController.swift */; };
+		5F8E7BBF22826A54003CC639 /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E7BBE22826A54003CC639 /* TabBarController.storyboard */; };
+		5F8E7BC122826AE2003CC639 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E7BC022826AE2003CC639 /* TabBarController.swift */; };
 		B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */; };
 		B60B0DB71F5BCA9400056E9D /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */; };
 		B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		2BFD09191F97450E00E376E9 /* TableSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableSearch.storyboard; sourceTree = "<group>"; };
 		2BFD091B1F9745A100E376E9 /* TableSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableSearchViewController.swift; path = Controller/TableSearchViewController.swift; sourceTree = "<group>"; };
+		5F8E7BBE22826A54003CC639 /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		5F8E7BC022826AE2003CC639 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B60B0DB41F5BCA9400056E9D /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuViewController.swift; path = Controller/MainMenuViewController.swift; sourceTree = "<group>"; };
 		B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollViewController.swift; path = Controller/ScrollViewController.swift; sourceTree = "<group>"; };
 		B60B0DBB1F5BCB6E00056E9D /* ScrollViewScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScrollViewScene.storyboard; path = Storyboard/ScrollViewScene.storyboard; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 				B60B0DB51F5BCA9400056E9D /* ScrollViewController.swift */,
 				B60B0DC21F5BDC8400056E9D /* DynamicTableViewIBController.swift */,
 				2BFD091B1F9745A100E376E9 /* TableSearchViewController.swift */,
+				5F8E7BC022826AE2003CC639 /* TabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 				B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */,
 				B6EAE7C01F6514180094830C /* SizeClassPractice.storyboard */,
 				2BFD09191F97450E00E376E9 /* TableSearch.storyboard */,
+				5F8E7BBE22826A54003CC639 /* TabBarController.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -173,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E2AD861F49805800D30119 /* LaunchScreen.storyboard in Resources */,
+				5F8E7BBF22826A54003CC639 /* TabBarController.storyboard in Resources */,
 				B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */,
 				B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */,
 				B6E2AD811F49805800D30119 /* Main.storyboard in Resources */,
@@ -193,6 +201,7 @@
 				B60B0DC11F5BDB6C00056E9D /* TableViewIBCell.swift in Sources */,
 				B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */,
 				2BFD091C1F9745A100E376E9 /* TableSearchViewController.swift in Sources */,
+				5F8E7BC122826AE2003CC639 /* TabBarController.swift in Sources */,
 				B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */,
 				B60B0DB71F5BCA9400056E9D /* ScrollViewController.swift in Sources */,
 			);
