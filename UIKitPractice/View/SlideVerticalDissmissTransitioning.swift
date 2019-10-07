@@ -17,12 +17,13 @@ extension SlideVerticalDissmissTransitionable where Self: UIViewController {
     var viewForTransition: UIView { return self.view }
 }
 
-class SlideVerticalDissmissTransitioning: NSObject, UIViewControllerAnimatedTransitioning {
+class SlideVerticalDissmissTransitioning: NSObject {
     let intractiveTransition = UIPercentDrivenInteractiveTransition()
     weak var dissmissTransitionable: SlideVerticalDissmissTransitionable!
     var isIntractive = false
     
     func getPercentageInteractiveTransition() -> UIPercentDrivenInteractiveTransition? {
+        // don't use transition when dismiss without interacive
         return self.isIntractive ? self.intractiveTransition : nil
     }
     
@@ -34,27 +35,28 @@ class SlideVerticalDissmissTransitioning: NSObject, UIViewControllerAnimatedTran
         viewPanRecognizer.delegate = self
         dissmissTransitionable.viewForTransition.addGestureRecognizer(viewPanRecognizer)
     }
-    
+}
+
+extension SlideVerticalDissmissTransitioning: UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.3
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        guard let fromVC = transitionContext.viewController(forKey: .from) else {
+        guard let fromView = transitionContext.view(forKey: .from) else {
             transitionContext.completeTransition(false)
             return
         }
         
         UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
-            fromVC.view.frame.origin.y = UIScreen.main.bounds.height
-        }) { _ in
+            fromView.transform = .init(translationX: 0, y: fromView.bounds.height)
+        }, completion: { _ in
             if transitionContext.transitionWasCancelled {
                 transitionContext.completeTransition(false)
             } else {
-                fromVC.view.removeFromSuperview()
                 transitionContext.completeTransition(true)
             }
-        }
+        })
     }
 }
 

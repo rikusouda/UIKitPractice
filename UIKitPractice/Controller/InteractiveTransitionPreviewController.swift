@@ -17,7 +17,5 @@ class IntractiveTransitionPreviewController: UIViewController {
 }
 
 extension IntractiveTransitionPreviewController: SlideVerticalDissmissTransitionable {
-//    var viewForTransition: UIView {
-//        return self.pictureView
-//    }
+
 }
