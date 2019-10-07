@@ -21,6 +21,10 @@
 		B60B0DBF1F5BDB0400056E9D /* DynamicTableViewIB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */; };
 		B60B0DC11F5BDB6C00056E9D /* TableViewIBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DC01F5BDB6C00056E9D /* TableViewIBCell.swift */; };
 		B60B0DC31F5BDC8400056E9D /* DynamicTableViewIBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60B0DC21F5BDC8400056E9D /* DynamicTableViewIBController.swift */; };
+		B6D8CE9C1FB83BE20079BC7A /* InteractiveTransition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D8CE9B1FB83BE20079BC7A /* InteractiveTransition.storyboard */; };
+		B6D8CE9E1FB83BED0079BC7A /* SlideVerticalDissmissTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8CE9D1FB83BED0079BC7A /* SlideVerticalDissmissTransitioning.swift */; };
+		B6D8CEA11FB83C140079BC7A /* InteractiveTransitionPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8CE9F1FB83C130079BC7A /* InteractiveTransitionPreviewController.swift */; };
+		B6D8CEA21FB83C140079BC7A /* InteractiveTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8CEA01FB83C140079BC7A /* InteractiveTransitionController.swift */; };
 		B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2AD7B1F49805800D30119 /* AppDelegate.swift */; };
 		B6E2AD811F49805800D30119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD7F1F49805800D30119 /* Main.storyboard */; };
 		B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2AD821F49805800D30119 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		B60B0DBE1F5BDB0400056E9D /* DynamicTableViewIB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DynamicTableViewIB.storyboard; path = Storyboard/DynamicTableViewIB.storyboard; sourceTree = "<group>"; };
 		B60B0DC01F5BDB6C00056E9D /* TableViewIBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewIBCell.swift; path = View/TableViewIBCell.swift; sourceTree = "<group>"; };
 		B60B0DC21F5BDC8400056E9D /* DynamicTableViewIBController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DynamicTableViewIBController.swift; path = Controller/DynamicTableViewIBController.swift; sourceTree = "<group>"; };
+		B6D8CE9B1FB83BE20079BC7A /* InteractiveTransition.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InteractiveTransition.storyboard; path = Storyboard/InteractiveTransition.storyboard; sourceTree = "<group>"; };
+		B6D8CE9D1FB83BED0079BC7A /* SlideVerticalDissmissTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideVerticalDissmissTransitioning.swift; path = View/SlideVerticalDissmissTransitioning.swift; sourceTree = "<group>"; };
+		B6D8CE9F1FB83C130079BC7A /* InteractiveTransitionPreviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractiveTransitionPreviewController.swift; path = Controller/InteractiveTransitionPreviewController.swift; sourceTree = "<group>"; };
+		B6D8CEA01FB83C140079BC7A /* InteractiveTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractiveTransitionController.swift; path = Controller/InteractiveTransitionController.swift; sourceTree = "<group>"; };
 		B6E2AD781F49805800D30119 /* UIKitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2AD7B1F49805800D30119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6E2AD801F49805800D30119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FF190D8234B0311001C0BE1 /* InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				B6D8CE9B1FB83BE20079BC7A /* InteractiveTransition.storyboard */,
+				B6D8CEA01FB83C140079BC7A /* InteractiveTransitionController.swift */,
+				B6D8CE9F1FB83C130079BC7A /* InteractiveTransitionPreviewController.swift */,
+				B6D8CE9D1FB83BED0079BC7A /* SlideVerticalDissmissTransitioning.swift */,
+			);
+			name = InteractiveTransition;
+			sourceTree = "<group>";
+		};
 		B60B0DB31F5BCA6A00056E9D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +139,7 @@
 		B6E2AD7A1F49805800D30119 /* UIKitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				5FF190D8234B0311001C0BE1 /* InteractiveTransition */,
 				B60B0DBD1F5BCB8C00056E9D /* Storyboard */,
 				B60B0DB81F5BCA9B00056E9D /* View */,
 				B60B0DB31F5BCA6A00056E9D /* Controller */,
@@ -195,6 +215,7 @@
 				5F68628A22C5C242004F9678 /* PageViewController.storyboard in Resources */,
 				5F8E7BBF22826A54003CC639 /* TabBarController.storyboard in Resources */,
 				B60B0DBC1F5BCB6E00056E9D /* ScrollViewScene.storyboard in Resources */,
+				B6D8CE9C1FB83BE20079BC7A /* InteractiveTransition.storyboard in Resources */,
 				B6E2AD831F49805800D30119 /* Assets.xcassets in Resources */,
 				B6E2AD811F49805800D30119 /* Main.storyboard in Resources */,
 				B60B0DBF1F5BDB0400056E9D /* DynamicTableViewIB.storyboard in Resources */,
@@ -210,11 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D8CEA11FB83C140079BC7A /* InteractiveTransitionPreviewController.swift in Sources */,
 				B60B0DC31F5BDC8400056E9D /* DynamicTableViewIBController.swift in Sources */,
 				B60B0DC11F5BDB6C00056E9D /* TableViewIBCell.swift in Sources */,
 				5F68628E22C5C5FB004F9678 /* PageFirstViewController.swift in Sources */,
 				B60B0DB61F5BCA9400056E9D /* MainMenuViewController.swift in Sources */,
+				B6D8CEA21FB83C140079BC7A /* InteractiveTransitionController.swift in Sources */,
 				2BFD091C1F9745A100E376E9 /* TableSearchViewController.swift in Sources */,
+				B6D8CE9E1FB83BED0079BC7A /* SlideVerticalDissmissTransitioning.swift in Sources */,
 				5F8E7BC122826AE2003CC639 /* TabBarController.swift in Sources */,
 				5F68629222C5D28B004F9678 /* PageGeneralViewController.swift in Sources */,
 				B6E2AD7C1F49805800D30119 /* AppDelegate.swift in Sources */,
