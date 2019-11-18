@@ -38,6 +38,25 @@ class PageViewController: UIPageViewController {
         self.view.backgroundColor = .white
         UIPageControl.appearance().pageIndicatorTintColor = .gray
         UIPageControl.appearance().currentPageIndicatorTintColor = .systemBlue
+        
+        DispatchQueue.main.async {
+            let button = UIButton(type: .system)
+            self.view.addSubview(button)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            button.leftAnchor.constraint(equalTo: self.view.layoutMarginsGuide.leftAnchor).isActive = true
+            button.bottomAnchor.constraint(equalTo: self.view.layoutMarginsGuide.bottomAnchor).isActive = true
+            button.setTitle("Back", for: .normal)
+            button.addTarget(self, action: #selector(self.onBackButton(_:)), for: .touchUpInside)
+        }
+    }
+    
+    @objc func onBackButton(_ sender: UIButton) {
+        guard let index = self.pages.firstIndex(where: { self.viewControllers?.first === $0.viewController }) else {
+            return
+        }
+        if index > 0 {
+            self.setViewControllers([self.pages[index - 1].viewController], direction: .reverse, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -96,6 +115,9 @@ extension PageViewController: UIPageViewControllerDataSource {
     }
     
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return 1
+        guard let index = self.pages.firstIndex(where: { self.viewControllers?.first === $0.viewController }) else {
+            return 0
+        }
+        return index
     }
 }
