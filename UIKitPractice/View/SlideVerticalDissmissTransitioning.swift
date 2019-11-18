@@ -18,9 +18,9 @@ extension SlideVerticalDissmissTransitionable where Self: UIViewController {
 }
 
 class SlideVerticalDissmissTransitioning: NSObject {
-    let intractiveTransition = UIPercentDrivenInteractiveTransition()
-    weak var dissmissTransitionable: SlideVerticalDissmissTransitionable!
-    var isIntractive = false
+    private let intractiveTransition = UIPercentDrivenInteractiveTransition()
+    private weak var dissmissTransitionable: SlideVerticalDissmissTransitionable!
+    private var isIntractive = false
     
     func getPercentageInteractiveTransition() -> UIPercentDrivenInteractiveTransition? {
         // don't use transition when dismiss without interacive
@@ -48,8 +48,11 @@ extension SlideVerticalDissmissTransitioning: UIViewControllerAnimatedTransition
             return
         }
         
-        UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
-            fromView.transform = .init(translationX: 0, y: fromView.bounds.height)
+        UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
+                       delay: 0.0,
+                       options: UIView.AnimationOptions.curveEaseOut,
+                       animations: {
+                        fromView.transform = .init(translationX: 0, y: fromView.bounds.height)
         }, completion: { _ in
             if transitionContext.transitionWasCancelled {
                 transitionContext.completeTransition(false)

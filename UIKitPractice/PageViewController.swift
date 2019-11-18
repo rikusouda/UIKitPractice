@@ -34,6 +34,10 @@ class PageViewController: UIPageViewController {
         self.setViewControllers([secondPage], direction: .forward, animated: false, completion: nil)
         
         self.dataSource = self
+        
+        self.view.backgroundColor = .white
+        UIPageControl.appearance().pageIndicatorTintColor = .gray
+        UIPageControl.appearance().currentPageIndicatorTintColor = .systemBlue
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,4 +87,15 @@ extension PageViewController: UIPageViewControllerDataSource {
         return self.pages[newIndex].viewController
     }
     
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        if let pageViewController = pageViewController as? PageViewController {
+            return pageViewController.pages.count
+        } else {
+            return 0
+        }
+    }
+    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        return 1
+    }
 }
